@@ -119,7 +119,7 @@ function timeConversion(time, action) {
 }
 
 $task.fetch({
-  url: `https://api.waqi.info/feed/geo:${lat};${lng}/?token=${68aa7171ef94bbc1fc73ad20f77bd97d73a2f58d}`,
+  url: `https://api.waqi.info/feed/geo:${lat};${lng}/?token=${aqicnToken}`,
   headers: $request.headers
 }).then((response) => {
   let body = modifyWeatherResp($response.body, response.body)
